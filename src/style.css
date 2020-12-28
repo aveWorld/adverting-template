@@ -128,10 +128,17 @@ a {
 
 .modal__input {
   margin-top: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal__input > label {
+  width: 30%;
 }
 
 .modal__input > input {
-  margin-left: 5px;
+  margin-left: 15px;
   padding: 5px 15px;
   border: 2px solid #666666;
   border-radius: 5px;

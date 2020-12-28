@@ -115,10 +115,15 @@ $grey: #666666;
 
 .modal__input {
   margin-top: 16px;
+  display: flex;
+}
+
+.modal__input > label {
+  width: 30%;
 }
 
 .modal__input > input {
-  margin-left: 5px;
+  margin-left: 15px;
   padding: 5px 15px;
   border: 2px solid $grey;
   border-radius: 5px;
