@@ -135,6 +135,7 @@ a {
 
 .modal__input > label {
   width: 30%;
+  text-align: right;
 }
 
 .modal__input > input {
