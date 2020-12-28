@@ -38,9 +38,45 @@
       src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"
     ></script>
     <script defer src="./js/particles.js" type="module"></script>
+    <script defer src="./js/modal.js"></script>
   </head>
   <body>
+    <!-- arrow that goes to the top of the page -->
     <a class="to-top" href="#"><i class="fas fa-chevron-up"></i></a>
+    <div class="modal">
+      <div class="modal__wrapper">
+        <div class="modal__exit">
+          <i class="fas fa-times"></i>
+        </div>
+        <div class="modal__header">
+          <div class="modal__header__text">Publisher login</div>
+        </div>
+        <div class="modal__body">
+          <div class="modal__input">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" placeholder="example@gmail.com" />
+          </div>
+          <div class="modal__input">
+            <label for="pass">Password:</label>
+            <input type="text" id="pass" placeholder="password" />
+          </div>
+          <button class="modal__btn">Login</button>
+          <div class="modal__forgot">
+            <div class="modal__forgot__account">
+              <a href="#" class="modal__forgot__link">Don't have account?</a>
+            </div>
+            <div class="modal__forgot__password">
+              <a href="#" class="modal__forgot__link">Forgot your password?</a>
+            </div>
+            <div class="modal__forgot__advertiser">
+              <a href="#" class="modal__forgot__link"
+                >Not Publisher? Login as Advertiser</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <header class="header">
       <div class="header__wrapper container">
         <img src="./img/logo.png" alt="logo" />
