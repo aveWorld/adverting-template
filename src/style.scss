@@ -79,6 +79,20 @@ $grey: #666666;
   transition: all 0.5s ease-in-out;
 }
 
+.modal__account {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba($color: #000000, $alpha: 0.8);
+  transition: all 0.5s ease-in-out;
+}
+
 .modal__exit {
   position: absolute;
   right: 3%;
@@ -86,7 +100,19 @@ $grey: #666666;
   transform: scale(1.6);
 }
 
+.modal__exit__account {
+  position: absolute;
+  right: 3%;
+  top: 2%;
+  transform: scale(1.6);
+}
+
 .modal__exit > i {
+  color: $white;
+  cursor: pointer;
+}
+
+.modal__exit__account > i {
   color: $white;
   cursor: pointer;
 }
@@ -131,8 +157,32 @@ $grey: #666666;
   transition: all 0.25s ease-in-out;
 }
 
+.modal__input > select {
+  margin-left: 15px;
+  padding: 5px 15px;
+  border: 2px solid $grey;
+  border-radius: 5px;
+  transition: all 0.25s ease-in-out;
+  width: 74%;
+}
+
 .modal__input > input:focus {
   border: 2px solid $mainYellow;
+}
+
+.modal__input > select:focus {
+  border: 2px solid $mainYellow;
+}
+
+.term-conditions {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  justify-content: center;
+}
+
+.term-conditions > input {
+  margin-right: 8px;
 }
 
 .modal__btn {
@@ -959,6 +1009,11 @@ $grey: #666666;
   min-height: 558px;
 }
 
+.sec-9__wrapper {
+  display: flex;
+  align-items: center;
+}
+
 .sec-9__title {
   color: $white;
   font-size: 60px;
@@ -1020,6 +1075,63 @@ $grey: #666666;
 .sec-9__updates__btn:hover {
   background-color: $black;
   color: $mainYellow;
+}
+
+.sec-9__form {
+  background-color: $white;
+}
+
+.sec-9__form__header {
+  background-color: $mainYellow;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  color: $white;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.sec-9__form__body {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 60px;
+}
+
+.sec-9__form__input {
+  margin: 5px 0px;
+  background-color: rgba($color: $grey, $alpha: 0.1);
+  padding: 4px 0px 4px 6px;
+  border: 2px solid rgba($color: $grey, $alpha: 0.2);
+}
+
+.sec-9__form__area {
+  margin-top: 5px;
+  background-color: rgba($color: $grey, $alpha: 0.1);
+  border: 2px solid rgba($color: $grey, $alpha: 0.2);
+  padding: 4px 0px 4px 6px;
+}
+
+.sec-9__form__btn {
+  background-color: $white;
+  color: $mainYellow;
+  border: 2px solid $mainYellow;
+  width: 100px;
+  padding: 10px 0px;
+  display: block;
+  margin: 10px auto;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14.4px;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+}
+
+.sec-9__form__btn:hover {
+  border: 2px solid $black;
+  color: $black;
 }
 
 .sec-10 {
@@ -1340,5 +1452,8 @@ $grey: #666666;
   }
   .modal__wrapper {
     margin-top: 80px;
+  }
+  .sec-9__form__body {
+    padding: 20px 30px;
   }
 }

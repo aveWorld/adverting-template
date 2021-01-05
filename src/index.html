@@ -63,11 +63,57 @@
           <button class="modal__btn">Login</button>
           <div class="modal__forgot">
             <div class="modal__forgot__account">
-              <a href="#" class="modal__forgot__link">Don't have account?</a>
+              <a href="#" class="modal__forgot__link" id="account"
+                >Don't have account?</a
+              >
             </div>
             <div class="modal__forgot__password">
               <a href="#" class="modal__forgot__link">Forgot your password?</a>
             </div>
+            <div class="modal__forgot__advertiser">
+              <a href="#" class="modal__forgot__link"
+                >Not Publisher? Login as Advertiser</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal__account">
+      <div class="modal__wrapper">
+        <div class="modal__exit__account">
+          <i class="fas fa-times"></i>
+        </div>
+        <div class="modal__header">
+          <div class="modal__header__text">Publisher signup</div>
+        </div>
+        <div class="modal__body">
+          <div class="modal__input">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" placeholder="example@gmail.com" />
+          </div>
+          <div class="modal__input">
+            <label for="pass">Password:</label>
+            <input type="text" id="pass" placeholder="password" />
+          </div>
+          <div class="modal__input">
+            <label for="pass-confirm">Confirm:</label>
+            <input type="text" id="pass-confirm" placeholder="password" />
+          </div>
+          <div class="modal__input">
+            <label for="contacts">Contacts:</label>
+            <select name="" id="contacts">
+              <option value="1">1</option>
+              <option value="1">2</option>
+              <option value="1">3</option>
+            </select>
+          </div>
+          <div class="term-conditions">
+            <input type="checkbox" />
+            <div>I agree with <a href="#">Terms & Conditions</a></div>
+          </div>
+          <button class="modal__btn">Create account</button>
+          <div class="modal__forgot">
             <div class="modal__forgot__advertiser">
               <a href="#" class="modal__forgot__link"
                 >Not Publisher? Login as Advertiser</a
@@ -665,20 +711,28 @@
     </section>
     <section class="sec-9">
       <div class="sec-9__wrapper container">
-        <h3 class="sec-9__title">
-          Sign Up for <span class="sec-9__title-span">Email Updates!</span>
-        </h3>
-        <h5 class="sec-9__text">
-          Knowing about all the recent developments in the industry is how you
-          should handle being an adman!
-        </h5>
-        <div class="sec-9__updates">
-          <input
-            type="text"
-            class="sec-9__updates__input"
-            placeholder="Your email here..."
-          />
-          <button class="sec-9__updates__btn">Submit</button>
+        <div class="sec-9__form">
+          <div class="sec-9__form__header">
+            <span>Get in touch</span>
+          </div>
+          <div class="sec-9__form__body">
+            <input type="text" placeholder="Name" class="sec-9__form__input" />
+            <input
+              type="email"
+              placeholder="E-mail"
+              class="sec-9__form__input"
+            />
+            <input type="text" placeholder="Phone" class="sec-9__form__input" />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="6"
+              placeholder="Your question"
+              class="sec-9__form__area"
+            ></textarea>
+            <button class="sec-9__form__btn">Send</button>
+          </div>
         </div>
       </div>
     </section>
